@@ -8,5 +8,8 @@ import com.rasulberov.reports.dto.Employee3;
 import java.util.List;
 
 public interface ApiService {
-    List<Employee> getData();
+    List<Employee3> getData();
+
+    Employee3[] getForEntityEmployeesAsArray();
 }
+

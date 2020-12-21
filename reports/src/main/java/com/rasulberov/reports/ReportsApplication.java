@@ -16,7 +16,7 @@ public class ReportsApplication {
 
         ApiService service = context.getBean(ApiServiceImpl.class);
 
-        System.out.println(service.getData());
+        System.out.println(service.getForEntityEmployeesAsArray());
     }
 
 }
