@@ -19,12 +19,14 @@ public class ApiServiceImpl implements ApiService {
     }
 
     @Override
-    public Employee getData() {
+    public List<Employee> getData() {
         UriComponentsBuilder builder = UriComponentsBuilder
                 .fromUriString(apiUrl);
 
-        Employee data = restTemplate.getForObject(builder.toUriString(), Employee.class);
-        return data;
+//        Employee data = restTemplate.getForObject(builder.toUriString(), Employee.class);
+        UserData data = restTemplate.getForObject(builder.toUriString(), UserData.class);
+
+        return data.getData();
     }
 
 }
