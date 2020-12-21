@@ -8,5 +8,5 @@ import com.rasulberov.reports.dto.Employee3;
 import java.util.List;
 
 public interface ApiService {
-    Employee3 getData();
+    Employee getData();
 }
