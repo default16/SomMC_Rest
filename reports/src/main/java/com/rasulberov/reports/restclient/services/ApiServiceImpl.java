@@ -1,7 +1,6 @@
 package com.rasulberov.reports.restclient.services;
 
-import com.rasulberov.reports.dto.Employee;
-import com.rasulberov.reports.dto.UserData;
+import com.rasulberov.reports.dto.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -20,12 +19,12 @@ public class ApiServiceImpl implements ApiService {
     }
 
     @Override
-    public List<Employee> getData() {
+    public Employee3 getData() {
         UriComponentsBuilder builder = UriComponentsBuilder
                 .fromUriString(apiUrl);
 
-        UserData data = restTemplate.getForObject(builder.toUriString(), UserData.class);
-        return data.getData();
+        Employee3 data = restTemplate.getForObject(builder.toUriString(), Employee3.class);
+        return data;
     }
 
 }

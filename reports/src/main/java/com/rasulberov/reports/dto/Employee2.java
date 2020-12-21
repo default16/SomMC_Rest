@@ -1,23 +1,20 @@
-package com.rasulberov.reports.dto;
 
-import org.springframework.data.annotation.Id;
+package com.rasulberov.reports.dto;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Employee implements Serializable
+public class Employee2 implements Serializable
 {
 
-    @Id
     private Integer id;
-
     private String name;
     private String surname;
     private String department;
     private Integer salary;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 7466745763743850306L;
+    private final static long serialVersionUID = -6186924287302390000L;
 
     public Integer getId() {
         return id;
@@ -67,15 +64,4 @@ public class Employee implements Serializable
         this.additionalProperties.put(name, value);
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", department='" + department + '\'' +
-                ", salary=" + salary +
-                ", additionalProperties=" + additionalProperties +
-                '}';
-    }
 }

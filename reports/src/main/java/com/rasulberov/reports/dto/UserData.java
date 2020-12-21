@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserData {
-    private List<Employee> data = new ArrayList<>();
+    private List<Employee3> data = new ArrayList<>();
 
-    public List<Employee> getData() {
+    public List<Employee3> getData() {
         return data;
-    }
-
-    public void setData(List<Employee> data) {
-        this.data = data;
     }
 }
